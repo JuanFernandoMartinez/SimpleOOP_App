@@ -4,10 +4,10 @@ public class Client {
 	
 	//constants 
 	
-	private static final int NOMRMAL = 0;
-	private static final int SILVER = 1;
-	private static final int GOLD = 2;
-	private static final int PLATINUM = 3;
+	private final static int NOMRMAL = 0;
+	private final static int SILVER = 1;
+	private final static int GOLD = 2;
+	private final static int PLATINUM = 3;
 	
 	//variables
 	
@@ -18,11 +18,12 @@ public class Client {
 	
 	// constructor 
 	
-	public Client(String name, String id, int type, Date date){
+	
+	public Client(String name, String id,  Date date,int type){
 		this.name = name;
 		this.id = id;
-		this.type = type;
 		this.expeditionDate = date;
+		this.type = type;
 	}
 	
 	// getters and setters
@@ -39,17 +40,25 @@ public class Client {
 	public void setId(String value){
 		id = value;
 	}
-	public int getType(){
-		return type;
-	}
-	public void setType(int value){
-		type = value;
-	}
+	
 	public Date getDate(){
 		return expeditionDate;
 	}
 	public void setDate(Date value){
 		expeditionDate = value;
 	}
+	public int getType(){
+		return type;
+	}
+	public void setType(int value){
+		type = value;
+	}
+	
 	
 }
+
+
+
+
+
+

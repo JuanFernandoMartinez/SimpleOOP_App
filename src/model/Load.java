@@ -2,9 +2,9 @@ package model;
 
 public class Load {
 	
-	private static final int dangerous = 0;
-	private static final int perishable = 1;
-	private static final int nonperishable = 2;
+	private final static int dangerous = 0;
+	private final static int perishable = 1;
+	private final static int nonperishable = 2;
 	
 	
 	private int boxes;
@@ -22,7 +22,8 @@ public class Load {
 		this.type = type;
 	}
 	
-	// getters and setters
+	
+	//getters and setters
 	
 	public int getBoxes(){
 		return boxes;
@@ -55,7 +56,7 @@ public class Load {
 	public void setType(int value){
 		type = value;
 	}
-	/*
+	/**
 	getTotalWeight
 	<b>description: </b> this method will calculate the total weight based on the box Quantity and the weight Per Box <br/>
 	<b>pre:</b> the class must be create and the attribs boxes and weightPerBox must be instantiated <br/>
