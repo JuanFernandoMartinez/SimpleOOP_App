@@ -18,12 +18,33 @@ public class Client {
 	
 	// constructor 
 	
-	
+	/** 
+		Created an object type Client <br>
+		<b>pre:</b> <br>
+		<b>post:</b> creates an object type Client with custom values <br>
+		@param name a String !empty. !null
+		@param id a String !empty. !null 
+		@param date object type Date !null 
+		@param type int in range (0,3) 
+	*/
 	public Client(String name, String id,  Date date,int type){
 		this.name = name;
 		this.id = id;
 		this.expeditionDate = date;
 		this.type = type;
+	}
+	
+	/** 
+		Creates an empty client object <br>
+		<b>pre:<b/> <br>
+		<b>post:</b> creates an empty object <br>
+		
+	*/
+	public Client(){
+		this.name = "";
+		this.id = "";
+		this.expeditionDate = new Date(0,0,0);
+		this.type = 0;
 	}
 	
 	// getters and setters

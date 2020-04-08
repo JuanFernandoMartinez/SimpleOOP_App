@@ -5,6 +5,14 @@ public class Date{
 	private int month;
 	private int day;
 	
+	/**
+		creates a Date object <br>
+		<b>pre:</b> <br>
+		<b>post:</b> creates an Date object with custom value <br>
+		@param year int !null. int >0
+		@param month int !null. in range(1,12)
+		@param day int !null. in range(1,31)
+	*/
 	public Date(int year, int month, int day){
 		this.year = year;
 		this.month = month;
